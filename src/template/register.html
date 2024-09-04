@@ -1,0 +1,45 @@
+{% include("headboard.html") %}
+
+<body style="background-color: rgb(202, 244, 230);">
+
+  <style >
+        .caja{
+            margin: 10%;
+            margin-left: 30%;
+            margin-right: 30%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3.5rem;
+        }
+  </style>
+    
+    <div class="caja">
+        <form class="form-control border-success" action="create-register" method="post">
+    
+            <!--alerta-->
+          <h1 class="text-center">Register</h1>
+          <div class="bg-trasnparent">
+          {% if menssage %}
+          {{menssage}}
+          </div>
+          {% endif %}
+    
+    
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control border-success" id="exampleInputEmail1" aria-describedby="emailHelp" name="txtCorreo">
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control border-success" id="exampleInputPassword1" name="txtPassword">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+    
+    
+    </div>
+</body>

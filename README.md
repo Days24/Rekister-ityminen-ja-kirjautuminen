@@ -1,0 +1,2 @@
+aktivoida = muutoksia
+yriTarki = ennenJälkeen
